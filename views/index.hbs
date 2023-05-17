@@ -1,0 +1,28 @@
+<section class="home">
+    {{#if message}}
+    <div class="alert alert-success" role="alert">
+        {{{message}}}
+    </div>
+    {{/if}}
+    <div class="blogsContainer">
+        {{#if blogs}}
+        {{#each blogs}}
+        <div class="blog">
+            <a href="/blog/view/{{id}}" class="blog-link">
+                <h3 class="px-3 py-3 bg-dark text-white">{{{title}}}</h3>
+                <div class="blogContent">
+                    <p>{{{content}}}</p>
+                    <div class="postedBy text-bold">
+                        <p>-- {{{user.username}}} on {{{createdAt}}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+        {{else}}
+        <h2 class="notify text-center p-5 display-5">
+            There are no blogs!
+        </h2>
+        {{/if}}
+    </div>
+</section>
