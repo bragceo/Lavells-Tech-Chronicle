@@ -95,7 +95,7 @@ Running the application locally:
 
 You can start your Express.js server by running the command npm start or node server.js in your terminal from the root directory of your project.
 
-Access the application: Now your application should be running. You can access it by opening a web browser and navigating to http://localhost:3001, or whatever port you specified in your server.js file.
+Access the application: Now your application should be running. You can access it by opening a web browser and navigating to http://localhost:3000, or whatever port you specified in your server.js file.
 
 Deploying the application with Heroku:
 
